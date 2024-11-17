@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{4ed56957-c05c-4f1f-b9cc-55e16bd7c1ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewport">
+      <UniqueIdentifier>{2bb74e28-d1d8-4ad0-ad76-ac55e0551651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tree">
+      <UniqueIdentifier>{2dfcd369-8034-4637-b210-25be3daca71b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernels">
+      <UniqueIdentifier>{8c24bac9-10ea-44ad-b262-f9eb1a4a73b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="geometry">
+      <UniqueIdentifier>{edcfc820-4eee-471b-9f9a-6e50294baf2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{f9137a0e-5f3f-48d9-9508-59f0410d99d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lbm">
+      <UniqueIdentifier>{f84a3b0f-684c-407a-ae85-fd17276e7fad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="settings">
+      <UniqueIdentifier>{6c660a5d-999b-41df-904c-035de5758544}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fragment.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="vertex.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="settings.h">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="vertex2.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\glad\src\glad.c" />
+    <ClCompile Include="Buffer.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="transformations.h">
+      <Filter>viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="Features.h">
+      <Filter>viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="tree.h">
+      <Filter>tree</Filter>
+    </ClInclude>
+    <ClInclude Include="zipIT.h">
+      <Filter>tree</Filter>
+    </ClInclude>
+    <ClInclude Include="functors.h">
+      <Filter>tree</Filter>
+    </ClInclude>
+    <ClInclude Include="points.h">
+      <Filter>tree</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="renderSetup.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="marching_cubes.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="table.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>lbm</Filter>
+    </ClInclude>
+    <ClInclude Include="meshSetup.h">
+      <Filter>lbm</Filter>
+    </ClInclude>
+    <ClInclude Include="lbm_settings.h">
+      <Filter>lbm</Filter>
+    </ClInclude>
+    <ClInclude Include="visualize.h">
+      <Filter>lbm</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="controls.h">
+      <Filter>settings</Filter>
+    </ClInclude>
+    <ClInclude Include="grid.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
