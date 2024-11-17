@@ -7,7 +7,9 @@ Tree construction on GPU was implemented based on the paper by J. Zhang and L. G
 The bottleneck of the simulation is the acceleration computation for the particles, as the tree construction step tends to be really fast. 
 
 
-## Simulation with quadtree visualization 1mil bodies
+## A220-300 
+https://github.com/user-attachments/assets/348d50da-62d7-4c84-89e4-b1ec237c163e
+
 
 
 ## Regular simulation 1mil bodies
