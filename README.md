@@ -8,7 +8,7 @@ The bottleneck of the simulation is the acceleration computation for the particl
 
 
 ## Simulation with quadtree visualization 1mil bodies
-https://github.com/user-attachments/assets/6690395c-04b0-4d9b-9326-5763cbf6f1f4
+
 
 ## Regular simulation 1mil bodies
 https://github.com/user-attachments/assets/1524a8f6-b0e0-4c49-ae47-a811b202b221
