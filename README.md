@@ -2,20 +2,18 @@
 ![image](https://github.com/user-attachments/assets/12eb5bb7-c60b-4c26-9c23-67121bcc17d5)
 
 
-Barnes-Hut gravity simulation utilizing a GPU based Quad-Tree. Written using Cuda and Thrust.
-Tree construction on GPU was implemented based on the paper by J. Zhang and L. Gruenwald (https://adms-conf.org/2019-camera-ready/zhang_adms19.pdf)  with some minor modifications.
-The bottleneck of the simulation is the acceleration computation for the particles, as the tree construction step tends to be really fast. 
+LBM CFD D3Q19 lattice using Bhatnagar Gross and Krook (BGK) relaxation method. Current setup contains 60mil voxels, as limited per my GPU memory. The visualization is done by computing the local curl at each point, and rendered using Marching Cubes algorithm. 
 
 
 ## A220-300 
 https://github.com/user-attachments/assets/348d50da-62d7-4c84-89e4-b1ec237c163e
 
+## Aerodynamics of a Cow
+https://github.com/user-attachments/assets/9145dea6-e826-4f80-9725-6f81bc80a3a9
 
 
-## Regular simulation 1mil bodies
-https://github.com/user-attachments/assets/1524a8f6-b0e0-4c49-ae47-a811b202b221
 
-The simulation can be run in real time with 1mil+ bodies, but accuracy must be reduced by changing the phi parameter.
+
 
 ### Settings
-In settings.h simulation parameters and controls can be tweaked as per users choice. The number of particles are entered into the console by the user, even though no explicit limit on the number of particles exists. Therefore, entering too many particles may cause some errors (for now, up to 4mil particles have been tested)
+In settings.h simulation parameters and controls can be tweaked as per users choice. The launch parameters, including the grid size, scale, as well as the LBM parameters such as viscosity, Reynolds number and free stream velocity can be tweaked as per users choice. In controls.h, control settings such as movement of the camera can be tweaked as per users choice. 
