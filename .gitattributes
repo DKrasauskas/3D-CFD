@@ -1,9 +1,9 @@
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
-* text=auto
 3dmodeling/lib/** linguist-vendored
 3dmodeling/include/** linguist-vendored
+* text=auto
 
 ###############################################################################
 # Set default behavior for command prompt diff.
